@@ -1,137 +1,82 @@
 <!DOCTYPE html>
 
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flex Turismos</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <header>
-        <div class="flex-container menu">
-            <div>
-                <h1>FlexTurismos</h1>
-            </div>
-            
-            <ul class="list-itens">
-                <li><a href="#quem-somos">Quem Somos</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#planos">Planos</a></li>
-            </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Trilha de CSS - DIO</title>
+  </head>
+  <body>
+    <header class="banner">
+      <div class="banner-content">
+        <div class="logo">
+          <img
+            src="assets/images/logo.png"
+            title="Logotipo Trilha de CSS DIO"
+            alt="Logotipo Trilha de CSS DIO"
+          />
         </div>
+        <h1>Trilha de CSS da DIO</h1>
+        <p class="texto">
+          A nova Trilha de CSS da DIO está disponível. Acesse já e aprenda do
+          zero como desenvolver sites profissionais.
+        </p>
+        <button class="bto" onclick="window.location.href='https://dio.me'">
+          Quero me inscrever
+        </button>
+      </div>
     </header>
 
-    <div class="flex-container apresentação">
-        <div class="texto-apresentação">
-            <h1>Flex <br>Turismos</h1>
-            <p>O melhor serviço para você!</p>
-            <a href="" class="btn">Saiba Mais!</a>
+    <main>
+      <section id="course-content">
+        <h2>O que vou aprender?</h2>
+        <p class="texto">
+          Temos 3 módulos recheados de conteúdos do básico ao avançado para que
+          você aprenda a desenvolver sites profissionais utilizando somente HTML
+          e CSS: sem nenhuma biblioteca ou framework a mais.
+        </p>
+        <div class="modules-list">
+          <div class="module">
+            <span>Módulo 01:</span> primeiros passos com CSS
+          </div>
+          <div class="module">
+            <span>Módulo 02:</span> trabalhando com layouts no CSS
+          </div>
+          <div class="module">
+            <span>Módulo 03:</span> refinando os estilos CSS das nossas páginas
+          </div>
         </div>
+      </section>
+      <section id="transform-world">
+        <p>TRANSFORME O MUNDO COM A GENTE</p>
+      </section>
 
-        <div>
-            <div><img src="./imagens/0-main.png" alt="banner de apresentação"></div>
-        </div>
-    </div>
-
-    <div class="flex-container">
-        <div>
-            <img src="./imagens/1-quem-somos.png" alt="balcão de atendimento">
-        </div>
-
-        <div id="quem-somos">
-            <h2>Quem somos</h2>
-            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-            <br>
-            The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
-        </div>
-    </div>
-
-    <div class="container-externo">
-        <div id="serviços" class="flex-container">
-            <div>
-                <h2>Serviços</h2>
-            </div>
-    
-            <div class="list-serviços">
-                <div class="item-serviço">
-                    <div><img src="./imagens/icon-2.png" alt="hospedagens"></div>
-                    <p>Hospedagens</p>
-                    <a href="#">Comprar Agora</a>
-                </div>
-    
-                <div class="item-serviço">
-                   <div><img src="./imagens/icon-1.png" alt="pacote de viagens"></div>
-                   <p>Pacotes de viagens</p>
-                   <a href="#">Comprar Agora</a>
-                </div>
-    
-                <div class="item-serviço">
-                    <div><img src="./imagens/icon-3.png" alt="roteiros personalizados"></div>
-                    <p>Roteiros personalizados</p>
-                    <a href="#">Comprar Agora</a>
-                </div>
-    
-            </div>
-        </div>
-        
-    </div>
-
-    <div id="plano" class="flex-container">
-
-        <div><h2>Planos</h2></div>
-
-        <div class="list-planos">        
-
-            <div class="item-plano">
-                <h3>Plano 1</h3>
-                <ul>
-                    <li>Suporte 24h</li>
-                    <li>Serviços de quarto</li>
-                    <li>Guia turístico</li>
-                </ul>
-                <a href="#" class="btn">Saiba Mais!</a>
-            </div>
-    
-            <div class="item-plano">
-                <h3>Plano 2</h3>
-                <ul>
-                    <li>Suporte 24h</li>
-                    <li>Serviços de quarto</li>
-                    <li>Guia turístico</li>
-                    <li>Roteiro de trilhas</li>
-                    <li>Serviço personalizado</li>
-                </ul>
-                <a href="#" class="btn">Saiba Mais!</a>
-            </div>
-    
-            <div class="item-plano">
-                <h3>Plano 3</h3>
-                <br>
-                <ul>
-                    <li>Suporte 24h</li>
-                    <li>Serviços de quarto</li>
-                    <li>Guia turístico</li>
-                    <li>Roteiro de trilhas</li>
-                    <li>Serviço personalizado</li>
-                    <li>Área Vip</li>
-                </ul>
-                <br>
-                <a href="#" class="btn">Saiba Mais!</a>
-            </div>
-
-        </div>
-
-    </div>
-
+      <section id="professional-challenges">
+        <h2>Evolua e encare novos desafios profissionais</h2>
+        <img
+          src="assets/images/professional-challenges.png"
+          title="Homem lendo depoimentos em um tablet"
+          alt="Homem lendo depoimentos em um tablet"
+        />
+        <p class="texto">
+          Junte-se ao nosso ecossistema e transforme o mundo com a gente! Todos
+          os dias dezenas de empresas acessam a nossa plataforma em busca dos
+          talentos mais criativos, dinâmicos e colaborativos, além do
+          conhecimento técnico. A nossa missão é te preparar para que você
+          conecte-se com as melhores oportunidades.
+        </p>
+      </section>
+    </main>
     <footer>
-        <div class="flex-container foot">
-            <p>&copy; 2022 CSS Flexbox</p>
-            <p>Desenvolvido por: "Andy" Benício</p>
-
-        </div>
-
+      <img
+        class="dio-logo"
+        src="assets/images/dio-logo.png"
+        title="Logotipo DIO com o texto make the change"
+        alt="Logotipo DIO com o texto make the change"
+      />
+      <p>Acesse <a href="https://dio.me">dio.me</a> e se cadastre agora</p>
     </footer>
-</body>
+  </body>
 </html>
